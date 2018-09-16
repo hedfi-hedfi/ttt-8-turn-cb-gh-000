@@ -30,4 +30,8 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  user_input = gets.split.to_i
+  until user_input.between?(0, 8)
+     user_input = gets.split.to_i
+  end
 end
