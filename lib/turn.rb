@@ -21,7 +21,7 @@ def position_taken?(board, index)
 end
 
 def input_to_index(user_input)
-  user_input - 1
+  return user_input.to_i - 1
 end
 
 def move(board, user_input, value="X")
@@ -31,5 +31,5 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.split
-  user_input = input_to_index(user_input).to_i
+  user_input = input_to_index(user_input)
 end
