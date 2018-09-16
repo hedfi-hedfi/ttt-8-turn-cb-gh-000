@@ -31,9 +31,5 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.split
-  user_input = user_input.to_i
-  while (user_input > 9 || user_input < 1)
-  user_input = gets.split
-  end
   user_input = input_to_index(user_input)
 end
